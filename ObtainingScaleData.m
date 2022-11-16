@@ -1,7 +1,7 @@
 clear
 clc
-[frequency,D,R,T,labels,links,tracks] = tdfReadData3D ("data.tdf");
-[startTime,frequency_e,emgMap,labels_e,emgData] = tdfReadDataEmg ("data.tdf");
+[frequency,D,R,T,labels,links,tracks] = tdfReadData3D ("subject_1.tdf");
+[startTime,frequency_e,emgMap,labels_e,emgData] = tdfReadDataEmg ("subject_1.tdf");
 labels_plot = [string('SC'), 'AC', 'GH', 'EL', 'EM', 'C7', 'T8', 'AA', 'AI', 'TS']
 new_labels = labels_plot'
 new_labels = [new_labels(1:5,:); new_labels(8:end,:)]
